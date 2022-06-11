@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+## 일렁이다 Univ Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://velog.velcdn.com/images/willy4202/post/fc722ed8-d665-4e21-86da-d88a8d65f14d/image.png)
 
-## Available Scripts
+### 취지
 
-In the project directory, you can run:
+본 repo에선 부산에서 진행되는 대학가요제입의 랜딩 페이지를 제작합니다
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+수많은 명곡과 스타들을 낳은 대학가요제가
+'2022년 7월 15일'에
+[대학가요,재 IN BUSAN]으로 새롭게 찾아옵니다!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✔ 나는 노래를 좋아하고, 잘 부른다❗
+✔ 나는 무대를 오를 기회가 없었다❗
+✔ 나만의 음원을 발매해보고싶다❗
 
-### `npm test`
+위 사항에 하나라도 해당된다면 주목👊
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+음원 제작 및 발매를 할 기회도 주어지니 많은 관심과 참여부탁드려요 😊
 
-### `npm run build`
+🌈 모집 대상
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 부산/경상 지역 소재 대학 재/휴학중인 대학생
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🌈 모집 기간
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 2022.06.10.(금) ~ 06.19.(금) 오후 5시까지
 
-### `npm run eject`
+🌈 신청 방법
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 1차 오디션 (온라인)
+  -> 자유곡 영상 촬영 후 이메일 지원 (illeongida.univ@gmail.com)
+  메일 본문에 '소속 대학, 이름, 휴대폰 번호' 필수 기입
+  (1차 합격자는 개별적으로 추후 공지)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🌈 진행 절차
+✔ 2차 오디션(오프라인) | 06.23(목) 오전/오후 나누어 진행
+(자세한 시간과 장소는 추후 공지)
+✔ 쇼케이스 | 07.02(토) 롯데백화점 광복점
+✔ 대학가요,재 IN BUSAN | 07.15(금) 광안리 해수욕장
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 1차 서브미션 '과거의 대학가요제를 기억하다' (과거 대학가요제를 빛낸 명곡을 기반으로 서브미션 진행)
+- 2차 메인 음원 미션 '대학가요제, 새로운 재계의 시작 - 대학가요,재'
+  (대학가요제의 새로운 재계를 도모하는 20개의 음원 중 한 개의 음원을 선택하여, '젊음, 새로운 시작'이라는 주제를 기반으로 작사를 진행하여 메인 음원 미션 진행')
