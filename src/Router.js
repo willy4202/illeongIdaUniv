@@ -4,10 +4,12 @@ import Abouts from "./Pages/Abouts/Abouts";
 import ContestDetail from "./Pages/ContestDetail/ContestDetail";
 import Main from "./Pages/Main/Main";
 import SingDetail from "./Pages/SingDetail/SingDetail";
+import GlobalStyles from "./Styles/GlobalStyles";
 
 const Router = () => {
   return (
     <BrowserRouter>
+      <GlobalStyles />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/contest" element={<ContestDetail />} />
