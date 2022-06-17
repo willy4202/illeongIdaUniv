@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MainText = () => {
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <Body>
       <TextContainer>
@@ -13,16 +19,18 @@ const MainText = () => {
           이를 현재에 적용하여 <br />더 나은 미래를 만드는데 일조하고자 합니다.
         </LeftText>
         <RightText>
-          <div>
-            과거(독립 보훈) <br />- 우리의 선조들이
-            <br /> 세상에 삶을 내던져 일었던
-            <br /> '일렁임'을 기억합니다.
-          </div>
-          <div>
-            과거(대학가요) <br />- 당시, <br />
-            대학 대중 문화의 <br />
-            기틀을 만든, <br />
-            대학가요제를 기억합니다.
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <div>
+              과거(독립 보훈) <br />- 우리의 선조들이
+              <br /> 세상에 삶을 내던져 일었던
+              <br /> '일렁임'을 기억합니다.
+            </div>
+            <div>
+              과거(대학가요) <br />- 당시, <br />
+              대학 대중 문화의 <br />
+              기틀을 만든, <br />
+              대학가요제를 기억합니다.
+            </div>
           </div>
         </RightText>
         <LeftText>
@@ -40,12 +48,14 @@ const MainText = () => {
           </div>
         </LeftText>
         <RightText>
-          <div>
-            미래(독립 보훈) - <br />이 사실을 모두가 보내는 하루와 <br />그 삶
-            속에서 자연스레 느끼며 <br />
-            호흡할 수 있도록 할 것입니다.
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <div>
+              미래(독립 보훈) - <br />이 사실을 모두가 보내는 하루와 <br />그 삶
+              속에서 자연스레 느끼며 <br />
+              호흡할 수 있도록 할 것입니다.
+            </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
             미래(대학가요) - <br />
             대학가요,재를 통해 새로운 <br />
             대학 대중문화를 만들 것이며, <br />
@@ -75,11 +85,11 @@ const TextContainer = styled.div`
 
 const LeftText = styled.div`
   text-align: start;
-  font-size: 30px;
+  font-size: 20px;
   margin: 40vh 0;
 `;
 const RightText = styled.div`
   text-align: end;
-  font-size: 30px;
+  font-size: 20px;
   margin: 40px;
 `;

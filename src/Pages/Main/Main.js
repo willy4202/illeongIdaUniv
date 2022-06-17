@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import mainBack from "Images/MainVideo/mainBack.mp4";
 import MainText from "Pages/Main/MainText/";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Main = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <Container>
       <VideoHeader>
