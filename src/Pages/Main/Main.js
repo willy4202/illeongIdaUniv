@@ -17,6 +17,7 @@ const Main = () => {
         </Video>
       </VideoHeader>
       <ScrollDiv />
+      <div>hi</div>
       <Wrapper>
         <MainText />
       </Wrapper>
