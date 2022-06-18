@@ -38,6 +38,7 @@ const VideoHeader = styled.div`
 `;
 
 const Video = styled.video`
+  width: 100vw;
   height: 100vh;
 `;
 
