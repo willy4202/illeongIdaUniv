@@ -12,11 +12,14 @@ const MainText = () => {
     <Body>
       <TextContainer>
         <LeftText>
-          [새롭게 일렁이다]는
-          <br />
-          과거를 기억하고,
-          <br />
-          이를 현재에 적용하여 <br />더 나은 미래를 만드는데 일조하고자 합니다.
+          <div data-aos="fade">
+            [새롭게 일렁이다]는
+            <br />
+            과거를 기억하고,
+            <br />
+            이를 현재에 적용하여 <br />더 나은 미래를 만드는데 일조하고자
+            합니다.
+          </div>
         </LeftText>
         <RightText>
           <div data-aos="fade-left" data-aos-duration="1000">
@@ -55,7 +58,7 @@ const MainText = () => {
               호흡할 수 있도록 할 것입니다.
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+          <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
             미래(대학가요) - <br />
             대학가요,재를 통해 새로운 <br />
             대학 대중문화를 만들 것이며, <br />
@@ -85,11 +88,11 @@ const TextContainer = styled.div`
 
 const LeftText = styled.div`
   text-align: start;
-  font-size: 20px;
+  font-size: 30px;
   margin: 40vh 0;
 `;
 const RightText = styled.div`
   text-align: end;
-  font-size: 20px;
+  font-size: 30px;
   margin: 40px;
 `;
