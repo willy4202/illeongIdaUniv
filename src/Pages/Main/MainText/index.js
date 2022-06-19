@@ -13,9 +13,10 @@ const MainText = () => {
       <TextContainer>
         <LeftAlignContaienr>
           <div data-aos="fade" data-aos-duration="1000">
-            [새롭게 일렁이다]는
+            새롭게 일렁이다는
             <br />
-            과거를 기억함으로 <br />더 나은 미래를 만드는데 일조하고자 합니다.
+            과거를 기억하고 이를 현재에 적용하여 <br />더 나은 미래를 만드는데
+            일조하고자 합니다.
           </div>
         </LeftAlignContaienr>
         <RightAlignContainer>
