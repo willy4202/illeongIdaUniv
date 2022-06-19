@@ -53,6 +53,8 @@ const ScrollDiv = styled.div`
 
 const Wrapper = styled.div`
   width: 100vw;
+  height: 250vh;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
