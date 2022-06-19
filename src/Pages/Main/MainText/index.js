@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import testImg from "Images/MainImage/testImg.svg";
 
 const MainText = () => {
   useEffect(() => {
@@ -10,15 +11,16 @@ const MainText = () => {
 
   return (
     <Body>
+      <DesignImg src={testImg} />
       <TextContainer>
         <LeftAlignContaienr larger>
           <Title data-aos="fade" data-aos-duration="1000">
             새롭게 일렁이다는
           </Title>
-          <Title data-aos="fade" data-aos-duration="1400" data-aos-delay="500">
+          <Title data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
             과거를 기억하고 이를 현재에 적용하여
           </Title>
-          <Title data-aos="fade" data-aos-duration="2000" data-aos-delay="700">
+          <Title data-aos="fade" data-aos-duration="1000" data-aos-delay="600">
             더 나은 미래를 만드는데 일조하고자 합니다.
           </Title>
         </LeftAlignContaienr>
@@ -75,6 +77,7 @@ export default MainText;
 const Body = styled.div`
   width: 1120px;
   justify-content: center;
+  position: relative;
 `;
 
 const TextContainer = styled.div`
@@ -98,9 +101,18 @@ const Title = styled.div`
   line-height: 170%;
   font-weight: ${({ bold }) => (bold ? 600 : 300)};
   font-size: ${({ theme }) => theme.fontLarge};
+  margin-bottom: 10px;
 `;
 
 const ContentText = styled.div`
   line-height: 170%;
-  font-size: ${({ theme }) => theme.fontSemiMedium};
+  font-size: ${({ theme }) => theme.fontMedium};
+  font-weight: 200;
+`;
+
+const DesignImg = styled.img`
+  width: 15%;
+  position: absolute;
+  right: 0;
+  top: 20%;
 `;
