@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     *{
         box-sizing: border-box;
     }
+    
     input, textarea { 
       -moz-user-select: auto;
       -webkit-user-select: auto;
@@ -27,6 +28,9 @@ const GlobalStyles = createGlobalStyle`
       padding: 0;
       cursor: pointer;
     }
+    body{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
 `;
 
 export default GlobalStyles;
