@@ -17,6 +17,7 @@ export const theme = {
   weightBold: 700,
   weightSemiBold: 600,
   weightRegular: 400,
+  weightLight: 200,
 
   absoluteCenter: css`
     position: absolute;
