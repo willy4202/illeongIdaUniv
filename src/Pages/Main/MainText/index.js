@@ -74,6 +74,7 @@ const MainText = () => {
 };
 
 export default MainText;
+
 const Body = styled.div`
   width: 1120px;
   justify-content: center;
@@ -107,7 +108,7 @@ const Title = styled.div`
 const ContentText = styled.div`
   line-height: 170%;
   font-size: ${({ theme }) => theme.fontMedium};
-  font-weight: 200;
+  font-weight: ${({ theme }) => theme.weightLight};
 `;
 
 const DesignImg = styled.img`
