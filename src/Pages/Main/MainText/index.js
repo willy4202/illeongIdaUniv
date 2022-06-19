@@ -102,6 +102,5 @@ const Title = styled.div`
 
 const ContentText = styled.div`
   line-height: 170%;
-  font-weight: ${({ bold }) => (bold ? 600 : 300)};
   font-size: ${({ theme }) => theme.fontSemiMedium};
 `;

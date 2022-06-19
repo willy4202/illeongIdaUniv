@@ -4,6 +4,7 @@ import mainBack from "Images/MainVideo/mainBack.mp4";
 import MainText from "Pages/Main/MainText/";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import OurProject from "./OurProject/OurProject";
 
 const Main = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Main = () => {
       <ScrollDiv />
       <Wrapper>
         <MainText />
+        <OurProject />
       </Wrapper>
     </Container>
   );
@@ -53,9 +55,9 @@ const ScrollDiv = styled.div`
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 250vh;
   padding: 0 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
