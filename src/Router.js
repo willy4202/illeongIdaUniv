@@ -12,8 +12,8 @@ const Router = () => {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/contest" element={<ContestDetail />} />
-        <Route path="/sing" element={<SingDetail />} />
+        <Route path="/1" element={<ContestDetail />} />
+        <Route path="/2" element={<SingDetail />} />
         <Route path="/abouts" element={<Abouts />} />
       </Routes>
     </BrowserRouter>
