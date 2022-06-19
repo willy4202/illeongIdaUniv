@@ -7,7 +7,7 @@ export const theme = {
   mainGrey: "#F7F7F7",
   darkGrey: "#797979",
 
-  fontLarge: "48px",
+  fontLarge: "38px",
   fontMedium: "28px",
   fontSemiMedium: "20px",
   fontRegular: "18px",
