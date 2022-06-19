@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import logo from "Images/MainImage/logo.png";
+import singLogo from "Images/MainImage/sing_logo.png";
 
 const MOCK = [
   {
     id: 1,
-    logoImg: "http://localhost:3000/static/media/logo.e59b430e55f3571d9867.png",
+    logoImg: logo,
     title: "독립 보훈 프로젝트",
     content: `대한을 기억하는 행위의 중심이 되고자합니다. 독립선대의 희생이 더 명예로울 수 있도록 그들의 명예가 끊이지 않을 수 있도록 그들을 기억하는 행위의 중심이 되고자. 문을 열고 나아갑니다.`,
   },
   {
     id: 2,
-    logoImg:
-      "http://localhost:3000/static/media/sing_logo.f9af7612bfb4b4cdb87c.png",
+    logoImg: singLogo,
     title: "대학가요,재",
     content: `대학 대중 문화를 마드는 행위의 중심이 되고자 합니다. 
     담을 수 없는, 넘쳐 흐르는 대학생들의 끼와 재능을 발산할 수 있는 '그들만을 위한 구심점'을 만들어 대학 대중 문화의 기틀을 만들 것입니다. 
