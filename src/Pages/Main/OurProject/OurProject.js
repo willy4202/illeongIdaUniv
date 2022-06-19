@@ -23,7 +23,7 @@ const OurProject = () => {
           <ImgWrapper>
             <Img src={singLogo} alt="일렁이다 로고" />
           </ImgWrapper>
-          <div>독립보훈프로젝트</div>
+          <div>대학가요,재</div>
           <div>
             대한을 기억하는 행위의 중심이 되고자합니다. 독립선대의 희생이 더
             명예로울 수 있도록 그들의 명예가 끊이지 않을 수 있도록 그들을
