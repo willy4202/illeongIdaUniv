@@ -1,3 +1,4 @@
+import Nav from "Components/Nav";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Abouts from "./Pages/Abouts/Abouts";
@@ -10,6 +11,7 @@ const Router = () => {
   return (
     <BrowserRouter>
       <GlobalStyles />
+      <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/contest" element={<ContestDetail />} />
