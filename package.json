@@ -21,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +48,8 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0"
-  }
+    "eslint-plugin-prettier": "^4.0.0",
+    "gh-pages": "^4.0.0"
+  },
+  "homepage": "https://willy4202.github.io"
 }
