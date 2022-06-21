@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/illeongIdaUniv/static/css/main.87e963af.css",
-    "main.js": "/illeongIdaUniv/static/js/main.1b05c4f4.js",
-    "static/media/mainBack.mp4": "/illeongIdaUniv/static/media/mainBack.0e581ab59775b69258e0.mp4",
-    "static/media/sing_logo.png": "/illeongIdaUniv/static/media/sing_logo.f9af7612bfb4b4cdb87c.png",
-    "static/media/logo.png": "/illeongIdaUniv/static/media/logo.e59b430e55f3571d9867.png",
-    "index.html": "/illeongIdaUniv/index.html",
-    "static/media/testImg.svg": "/illeongIdaUniv/static/media/testImg.da46d8bf387bea264077f1f80c5e6872.svg",
-    "main.87e963af.css.map": "/illeongIdaUniv/static/css/main.87e963af.css.map",
-    "main.1b05c4f4.js.map": "/illeongIdaUniv/static/js/main.1b05c4f4.js.map"
+    "main.css": "/static/css/main.87e963af.css",
+    "main.js": "/static/js/main.49dc58b2.js",
+    "static/media/mainBack.mp4": "/static/media/mainBack.0e581ab59775b69258e0.mp4",
+    "static/media/sing_logo.png": "/static/media/sing_logo.f9af7612bfb4b4cdb87c.png",
+    "static/media/logo.png": "/static/media/logo.e59b430e55f3571d9867.png",
+    "index.html": "/index.html",
+    "static/media/testImg.svg": "/static/media/testImg.da46d8bf387bea264077f1f80c5e6872.svg",
+    "main.87e963af.css.map": "/static/css/main.87e963af.css.map",
+    "main.49dc58b2.js.map": "/static/js/main.49dc58b2.js.map"
   },
   "entrypoints": [
     "static/css/main.87e963af.css",
-    "static/js/main.1b05c4f4.js"
+    "static/js/main.49dc58b2.js"
   ]
 }
