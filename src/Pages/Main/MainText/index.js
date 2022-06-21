@@ -28,12 +28,12 @@ const MainText = () => {
           <ContentText data-aos="fade-left" data-aos-duration="1000">
             <Title bold>과거</Title>
             <div>
-              독립 보훈 우리의 선조들이 세상에 삶을 내던져 일었던 '일렁임'을
-              기억합니다.
+              <Bold>독립 보훈</Bold> 우리의 선조들이 세상에 삶을 내던져 일었던
+              '일렁임'을 기억합니다.
             </div>
             <div>
-              대학가요,재 당시 대학 대중 문화의 기틀을 만든 대학가요제를
-              기억합니다.
+              <Bold>대학가요,재</Bold> 당시 대학 대중 문화의 기틀을 만든
+              대학가요제를 기억합니다.
             </div>
           </ContentText>
         </RightAlignContainer>
@@ -41,12 +41,12 @@ const MainText = () => {
           <ContentText data-aos="fade-right" data-aos-duration="1000">
             <Title bold>현재</Title>
             <div>
-              독립 보훈 오늘 우리가 발 딛고 사는 이 나라, 이 자유는 대가 없는
-              것이 아닙니다.
+              <Bold>독립 보훈</Bold> 오늘 우리가 발 딛고 사는 이 나라, 이 자유는
+              대가 없는 것이 아닙니다.
             </div>
             <div>
-              대학가요 사라진 '대중'을 되찾기 위해 멈춰버린 대학가요제의 새로운
-              재계를 도모합니다.
+              <Bold>대학가요,재</Bold> 사라진 '대중'을 되찾기 위해 멈춰버린
+              대학가요제의 새로운 재계를 도모합니다.
             </div>
           </ContentText>
         </LeftAlignContaienr>
@@ -54,8 +54,8 @@ const MainText = () => {
           <ContentText data-aos="fade-up" data-aos-duration="1000">
             <Title bold>미래</Title>
             <div>
-              독립 보훈 이 사실을 모두가 보내는 하루와 <br />그 삶 속에서
-              자연스레 느끼며 호흡할 수 있도록 할 것입니다.
+              <Bold>독립 보훈</Bold> 이 사실을 모두가 보내는 하루와 <br />그 삶
+              속에서 자연스레 느끼며 호흡할 수 있도록 할 것입니다.
             </div>
             <br />
           </ContentText>
@@ -64,7 +64,8 @@ const MainText = () => {
             data-aos-delay="200"
             data-aos-duration="1200"
           >
-            대학가요,재를 통해 새로운 대학 대중문화를 만들 것이며, <br />
+            <Bold>대학가요,재</Bold>를 통해 새로운 대학 대중문화를 만들 것이며,{" "}
+            <br />
             이를 통해, 새로운 K-문화의 반열에 '대학 대중 문화'가 오를 것입니다.
           </ContentText>
         </RightAlignContainer>
@@ -116,4 +117,8 @@ const DesignImg = styled.img`
   position: absolute;
   right: 0;
   top: 20%;
+`;
+
+const Bold = styled.span`
+  font-weight: ${({ theme }) => theme.weightSemiBold};
 `;
