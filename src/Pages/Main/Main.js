@@ -29,7 +29,6 @@ export default Main;
 
 const Container = styled.div`
   width: 100vw;
-
   position: relative;
 `;
 
