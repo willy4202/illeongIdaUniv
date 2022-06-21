@@ -6,6 +6,7 @@ export const theme = {
   mainPink: "#FF385C",
   mainGrey: "#F7F7F7",
   darkGrey: "#797979",
+  cardBackground: "#121212",
 
   fontLarge: "36px",
   fontMedium: "24px",

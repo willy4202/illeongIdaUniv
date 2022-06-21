@@ -9,13 +9,13 @@ const MOCK = [
     id: "1",
     logoImg: logo,
     title: "독립 보훈 프로젝트",
-    content: `대한을 기억하는 행위의 중심이 되고자합니다. 독립선대의 희생이 더 명예로울 수 있도록 그들의 명예가 끊이지 않을 수 있도록 그들을 기억하는 행위의 중심이 되고자. 문을 열고 나아갑니다.`,
+    content: `대한을 기억하는 행위의 중심이 되고자합니다.\n \n독립선대의 희생이 더 명예로울 수 있도록\n그들의 명예가 끊이지 않을 수 있도록\n그들을 기억하는 행위의 중심이 되고자. \n \n문을 열고 나아갑니다.`,
   },
   {
     id: "2",
     logoImg: singLogo,
     title: "대학가요,재",
-    content: `대학 대중 문화를 마드는 행위의 중심이 되고자 합니다. 담을 수 없는, 넘쳐 흐르는 대학생들의 끼와 재능을 발산할 수 있는 '그들만을 위한 구심점'을 만들어 대학 대중 문화의 기틀을 만들 것입니다. 대학 대중 문화를 만드는 행위의 중심이 되고자 문을 열고 나아갑니다.`,
+    content: `대학 대중 문화를 만드는 행위의 중심이 되고자 합니다.\n\n담을 수 없는, 넘쳐 흐르는 대학생들의 끼와 재능을\n발산할 수 있는 '그들만을 위한 구심점'을 만들어\n대학 대중 문화의 기틀을 만들 것입니다.\n대학 대중 문화를 만드는 행위의 중심이 되고자\n\n문을 열고 나아갑니다.`,
   },
 ];
 
@@ -23,6 +23,9 @@ const OurProject = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
+    // fetch("http://localhost:3000/Mock/Main/OurProject/MOCK.json")
+    //   .then(res => res.json())
+    //   .then(data => setData(data.result));
     setData(MOCK);
   }, []);
 
@@ -37,7 +40,7 @@ const OurProject = () => {
         </Title>
       </Header>
       <ArticleWraper>
-        {data && (
+        {data.length && (
           <>
             {data.map(item => (
               <Article key={item.id}>
@@ -47,7 +50,8 @@ const OurProject = () => {
                 <SubTitle>
                   <Bold>{item.title}</Bold>
                 </SubTitle>
-                <div>{item.content}</div>
+                <hr />
+                <Text>{item.content}</Text>
               </Article>
             ))}
           </>
@@ -63,7 +67,7 @@ const Section = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 50vh;
+  margin-top: 800px;
   width: 1120px;
 `;
 
@@ -92,8 +96,11 @@ const ArticleWraper = styled.div`
 
 const Article = styled.div`
   display: flex;
-  width: 520px;
-  padding: 0 30px;
+  width: 420px;
+  margin: 0 30px;
+  padding: 30px;
+  background-color: ${({ theme }) => theme.cardBackground};
+  border-radius: 28px;
   flex-direction: column;
 `;
 
@@ -106,7 +113,7 @@ const ImgWrapper = styled(Link)`
 `;
 
 const Img = styled.img`
-  width: 60%;
+  width: 70%;
   align-self: center;
   &:hover {
     transform: scale(1.1, 1.1);
@@ -118,4 +125,9 @@ const Img = styled.img`
 const SubTitle = styled.div`
   font-size: ${({ theme }) => theme.fontMedium};
   margin-bottom: 30px;
+`;
+
+const Text = styled.div`
+  white-space: pre-wrap;
+  line-height: 150%;
 `;
