@@ -1,25 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import ilimage from "Images/MainImage/logo.png";
+import { Link } from "react-router-dom";
+import Main from "Pages/Main/Main";
 
 const Nav = () => {
   return (
     <Wrapper>
       <Navbar>
         <Logo>
-          <a href="http://localhost:3000/">
+          <Link to="/">
             <Navimage src={ilimage} />
-          </a>
+          </Link>
         </Logo>
         <Navmenu>
           <Navli>
-            <Nava href="http://localhost:3000/">HOME</Nava>
+            <Nava to="/">HOME</Nava>
           </Navli>
           <Navli>
-            <Nava href="http://localhost:3000/2">SING</Nava>
+            <Nava to="/2">SING</Nava>
           </Navli>
           <Navli>
-            <Nava href="/">CONTACT US</Nava>
+            <Nava to="/">CONTACT US</Nava>
           </Navli>
         </Navmenu>
       </Navbar>
@@ -61,7 +63,7 @@ const Navli = styled.li`
   margin: 5px auto;
 `;
 
-const Nava = styled.a`
+const Nava = styled(Link)`
   text-decoration: none;
   padding: 5px 40px;
 `;
