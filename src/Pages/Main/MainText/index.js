@@ -9,11 +9,6 @@ const MainText = () => {
     AOS.init();
   });
 
-  const size = {
-    width: window.innerWidth || document.body.clientWidth,
-    height: window.innerHeight || document.body.clientHeight,
-  };
-
   return (
     <Body>
       <DesignImg src={testImg} />
