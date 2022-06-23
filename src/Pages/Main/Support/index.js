@@ -1,50 +1,42 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-// import singLogo from "Images/MainImage/sing_logo.png";
+import singLogo from "Images/MainImage/sing_logo.png";
 
-// const MOCK_LOGO = [
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-//   {
-//     img: singLogo,
-//   },
-// ];
+const MOCK_LOGO = [
+  {
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
+  },
+  {
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
+  },
+  {
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
+  },
+  {
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
+  },
+  {
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
+  },
+  {
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
+  },
+];
 
 const Support = () => {
   const [logo, setLogo] = useState([]);
 
   useEffect(() => {
-    fetch("/Mock/Main/Logos.json")
-      .then(res => res.json())
-      .then(data => console.log(data.result));
+    // fetch(`/Mock/Main/Logos.json`)
+    //   .then(res => res.json())
+    //   .then(data => setLogo(data.result));
+    setLogo(MOCK_LOGO);
   }, [logo]);
 
   return (

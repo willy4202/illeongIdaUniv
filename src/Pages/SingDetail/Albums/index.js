@@ -4,22 +4,65 @@ import logo from "Images/MainImage/logo.png";
 import { Link } from "react-router-dom";
 
 const MOCK_SONG = [
-  { imgCover: logo, title: "제목", singer: "황석영" },
-  { imgCover: logo, title: "제목", singer: "황석영" },
-  { imgCover: logo, title: "제목", singer: "황석영" },
-  { imgCover: logo, title: "제목", singer: "황석영" },
-  { imgCover: logo, title: "제목", singer: "황석영" },
-  { imgCover: logo, title: "제목", singer: "황석영" },
-  { imgCover: logo, title: "제목", singer: "황석영" },
+  {
+    imgCover:
+      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    link: "https://youtu.be/ngr9kV1ReO8",
+    title: "제목",
+    singer: "황석영",
+  },
+  {
+    imgCover:
+      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    link: "https://youtu.be/ngr9kV1ReO8",
+    title: "제목",
+    singer: "황석영",
+  },
+  {
+    imgCover:
+      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    link: "https://youtu.be/ngr9kV1ReO8",
+    title: "제목",
+    singer: "황석영",
+  },
+  {
+    imgCover:
+      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    link: "https://youtu.be/ngr9kV1ReO8",
+    title: "제목",
+    singer: "황석영",
+  },
+  {
+    imgCover:
+      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    link: "https://youtu.be/ngr9kV1ReO8",
+    title: "제목",
+    singer: "황석영",
+  },
+  {
+    imgCover:
+      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    link: "https://youtu.be/ngr9kV1ReO8",
+    title: "제목",
+    singer: "황석영",
+  },
+  {
+    imgCover:
+      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    link: "https://youtu.be/ngr9kV1ReO8",
+    title: "제목",
+    singer: "황석영",
+  },
 ];
 
 const Albums = () => {
   const [songData, setSongData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/Mock/SingDetail/Song.json")
-      .then(res => res.json())
-      .then(data => setSongData(data.result));
+    // fetch("http://localhost:3000/Mock/SingDetail/Song.json")
+    //   .then(res => res.json())
+    //   .then(data => setSongData(data.result));
+    setSongData(MOCK_SONG);
   }, []);
 
   return (
