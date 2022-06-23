@@ -2,18 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import ilimage from "Images/MainImage/logo.png";
 import { Link } from "react-router-dom";
-import Main from "Pages/Main/Main";
 
 const Nav = () => {
   return (
     <Wrapper>
       <Navbar>
-        <Logo>
-          <Link to="/">
-            <Navimage src={ilimage} />
-          </Link>
-        </Logo>
         <Navmenu>
+          <Logo>
+            <Link to="/">
+              <Navimage src={ilimage} />
+            </Link>
+          </Logo>
           <Navli>
             <Nava to="/">HOME</Nava>
           </Navli>
@@ -33,37 +32,55 @@ export default Nav;
 
 const Wrapper = styled.div`
   background-color: black;
-  height: 60px;
+  position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Navbar = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 70px;
 `;
 
 const Logo = styled.div`
-  height: 60px;
+  position: absolute;
+  left: 20px;
 `;
 
 const Navimage = styled.img`
   height: 50px;
-  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 500px) {
+    height: 40px;
+  }
 `;
 
 const Navmenu = styled.ul`
-  list-style: none;
-  padding: 10px 12px;
   display: flex;
-  margin: 2px auto;
+  justify-content: center;
+  align-items: center;
+  width: 1120px;
+  @media screen and (max-width: 500px) {
+    width: 250px;
+  }
 `;
 
 const Navli = styled.li`
   color: white;
-  margin: 5px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Nava = styled(Link)`
   text-decoration: none;
-  padding: 5px 40px;
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
 `;

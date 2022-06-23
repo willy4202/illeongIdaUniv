@@ -66,6 +66,10 @@ const Section = styled.div`
   flex-direction: column;
   margin-top: 800px;
   width: 1120px;
+  @media screen and (max-width: 500px) {
+    margin-top: 100%;
+    width: 320px;
+  }
 `;
 
 const Header = styled.div`
@@ -80,6 +84,9 @@ const Title = styled.div`
   font-size: ${({ theme, main }) => (main ? "110px" : theme.fontLarge)};
   font-weight: ${({ theme }) => theme.weightLight};
   line-height: 120%;
+  @media screen and (max-width: 500px) {
+    font-size: ${({ main }) => (main ? "45px" : "14px")};
+  }
 `;
 
 const Bold = styled.span`
@@ -89,6 +96,10 @@ const Bold = styled.span`
 const ArticleWraper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Article = styled.div`
@@ -99,6 +110,11 @@ const Article = styled.div`
   background-color: ${({ theme }) => theme.cardBackground};
   border-radius: 28px;
   flex-direction: column;
+  @media screen and (max-width: 500px) {
+    width: 320px;
+    padding: 20px;
+    margin-bottom: 20%;
+  }
 `;
 
 const ImgWrapper = styled(Link)`
@@ -107,6 +123,9 @@ const ImgWrapper = styled(Link)`
   align-items: center;
   height: 500px;
   overflow: hidden;
+  @media screen and (max-width: 500px) {
+    height: 280px;
+  }
 `;
 
 const Img = styled.img`
@@ -122,9 +141,16 @@ const Img = styled.img`
 const SubTitle = styled.div`
   font-size: ${({ theme }) => theme.fontMedium};
   margin-bottom: 30px;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+    margin: 20px 0 0 0;
+  }
 `;
 
 const Text = styled.div`
   white-space: pre-wrap;
   line-height: 150%;
+  @media screen and (max-width: 500px) {
+    font-size: 13px;
+  }
 `;

@@ -29,7 +29,6 @@ export default Main;
 const Container = styled.div`
   width: 100%;
   position: relative;
-  overflow-x: hidden;
 `;
 
 const Wrapper = styled.div`

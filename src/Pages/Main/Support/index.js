@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import singLogo from "Images/MainImage/sing_logo.png";
 
 const MOCK_LOGO = [
   {
@@ -68,12 +67,18 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 400px;
+  @media screen and (max-width: 500px) {
+    margin-top: 50%;
+  }
 `;
 
 const Title = styled.div`
   font-size: ${({ theme, main }) => (main ? "110px" : theme.fontLarge)};
   font-weight: ${({ theme }) => theme.weightLight};
   line-height: 120%;
+  @media screen and (max-width: 500px) {
+    font-size: ${({ main }) => (main ? "45px" : "14px")};
+  }
 `;
 
 const Bold = styled.span`
@@ -85,6 +90,10 @@ const Body = styled.div`
   margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 `;
 
 const LogoWrapper = styled.div`
@@ -96,6 +105,9 @@ const LogoWrapper = styled.div`
 const Img = styled.img`
   width: 220px;
   margin: 20px;
+  @media screen and (max-width: 500px) {
+    width: 120px;
+  }
 `;
 
 const LogoName = styled.div`
