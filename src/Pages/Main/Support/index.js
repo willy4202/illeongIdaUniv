@@ -1,40 +1,30 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import singLogo from "Images/MainImage/sing_logo.png";
 
 const MOCK_LOGO = [
   {
-    img: singLogo,
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
   },
   {
-    img: singLogo,
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
   },
   {
-    img: singLogo,
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
   },
   {
-    img: singLogo,
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
   },
   {
-    img: singLogo,
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
   },
   {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
+    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
+    name: "Nike",
   },
 ];
 
@@ -42,9 +32,10 @@ const Support = () => {
   const [logo, setLogo] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/Mock/Main/LOGOS.json")
-      .then(res => res.json())
-      .then(data => setLogo(data.result));
+    // fetch(`/Mock/Main/Logos.json`)
+    //   .then(res => res.json())
+    //   .then(data => setLogo(data.result));
+    setLogo(MOCK_LOGO);
   }, [logo]);
 
   return (
@@ -76,12 +67,18 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 400px;
+  @media screen and (max-width: 500px) {
+    margin-top: 50%;
+  }
 `;
 
 const Title = styled.div`
   font-size: ${({ theme, main }) => (main ? "110px" : theme.fontLarge)};
   font-weight: ${({ theme }) => theme.weightLight};
   line-height: 120%;
+  @media screen and (max-width: 500px) {
+    font-size: ${({ main }) => (main ? "45px" : "14px")};
+  }
 `;
 
 const Bold = styled.span`
@@ -93,6 +90,10 @@ const Body = styled.div`
   margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 `;
 
 const LogoWrapper = styled.div`
@@ -104,6 +105,9 @@ const LogoWrapper = styled.div`
 const Img = styled.img`
   width: 220px;
   margin: 20px;
+  @media screen and (max-width: 500px) {
+    width: 120px;
+  }
 `;
 
 const LogoName = styled.div`

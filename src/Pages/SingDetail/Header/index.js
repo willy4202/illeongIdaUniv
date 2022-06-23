@@ -40,6 +40,9 @@ const Body = styled.div`
   flex-direction: column;
   width: 1120px;
   font-size: ${({ theme }) => theme.fontSmall};
+  @media screen and (max-width: 500px) {
+    width: 320px;
+  }
 `;
 
 const TitleWrapper = styled.div`
@@ -52,10 +55,16 @@ const Title = styled.div`
   font-size: 100px;
   font-weight: 600;
   float: left;
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+  }
 `;
 
 const TitleImg = styled.img`
   width: 500px;
+  @media screen and (max-width: 500px) {
+    width: 170px;
+  }
 `;
 
 const Img = styled.img`
@@ -65,9 +74,18 @@ const Bold = styled.span`
   font-size: ${({ theme }) => theme.fontMedium};
   font-weight: ${({ theme }) => theme.weightSemiBold};
   margin: 60px 0;
+  word-break: keep-all;
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+    line-height: 140%;
+  }
 `;
 
 const Text = styled.div`
   white-space: pre-wrap;
+  word-break: keep-all;
   line-height: 150%;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
 `;

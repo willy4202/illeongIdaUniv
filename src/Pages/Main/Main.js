@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import OurProject from "./OurProject/OurProject";
 import MainVideo from "./MainVideo";
-import Nav from "Components/Nav";
 import Support from "./Support";
 
 const Main = () => {
@@ -28,12 +27,12 @@ const Main = () => {
 export default Main;
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   position: relative;
 `;
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   padding: 0 20px 300px;
   display: flex;
   flex-direction: column;
