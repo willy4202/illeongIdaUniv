@@ -91,18 +91,28 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 300px 0;
+  @media screen and (max-width: 500px) {
+    padding: 200px 0;
+  }
 `;
 
 const Title = styled.div`
   font-size: 70px;
   font-weight: 700;
   margin-bottom: 100px;
+  @media screen and (max-width: 500px) {
+    font-size: 40px;
+  }
 `;
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -117,6 +127,10 @@ const Album = styled.a`
   height: 200px;
   background-color: gray;
   overflow: hidden;
+  @media screen and (max-width: 500px) {
+    width: 140px;
+    height: 140px;
+  }
 `;
 
 const AlbumImg = styled.img`
