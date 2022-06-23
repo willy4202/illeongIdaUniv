@@ -9,7 +9,7 @@ import GlobalStyles from "./Styles/GlobalStyles";
 
 const Router = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <GlobalStyles />
       <Nav />
       <Routes>
