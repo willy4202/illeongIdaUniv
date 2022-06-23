@@ -23,9 +23,9 @@ const OurProject = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // fetch("http://localhost:3000/Mock/Main/OurProject/MOCK.json")
-    //   .then(res => res.json())
-    //   .then(data => setData(data.result));
+    fetch("Mock/Main/OurProject/MOCK.json")
+      .then(res => res.json())
+      .then(data => setData(data.result));
     setData(MOCK);
   }, []);
 

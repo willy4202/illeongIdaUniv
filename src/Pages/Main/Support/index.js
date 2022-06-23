@@ -1,50 +1,50 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import singLogo from "Images/MainImage/sing_logo.png";
+// import singLogo from "Images/MainImage/sing_logo.png";
 
-const MOCK_LOGO = [
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-  {
-    img: singLogo,
-  },
-];
+// const MOCK_LOGO = [
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+//   {
+//     img: singLogo,
+//   },
+// ];
 
 const Support = () => {
   const [logo, setLogo] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/Mock/Main/LOGOS.json")
+    fetch("/Mock/Main/Logos.json")
       .then(res => res.json())
-      .then(data => setLogo(data.result));
+      .then(data => console.log(data.result));
   }, [logo]);
 
   return (
