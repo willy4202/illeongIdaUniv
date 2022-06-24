@@ -114,7 +114,7 @@ const Container = styled.div`
   align-items: center;
   padding: 200px 0;
   background-color: white;
-  margin-top: 200px;
+
   width: 100%;
   color: black;
   position: relative;
