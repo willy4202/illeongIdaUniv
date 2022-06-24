@@ -2,16 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import ilimg from "Images/MainImage/logo.png";
 import singlogo from "Images/MainImage/sing_logo.png";
-import group_img from "Images/MainImage/group.png";
+import group_img from "Images/MainImage/contact.png";
 
 const Contact = () => {
   return (
     <Container>
       <Wrap>
-        <Text>CONTAC US</Text>
+        <Text>CONTACT US</Text>
         <Box>
           <Groupimg src={group_img}></Groupimg>
-          <Ceo>조현찬</Ceo>
         </Box>
       </Wrap>
     </Container>
@@ -22,7 +21,7 @@ export default Contact;
 
 const Container = styled.div`
   background-color: black;
-  height: 100vw;
+  height: 80vw;
 `;
 
 const Text = styled.h1`
