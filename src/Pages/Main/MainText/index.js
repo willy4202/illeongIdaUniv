@@ -80,6 +80,11 @@ const Body = styled.div`
   width: 1120px;
   justify-content: center;
   position: relative;
+  word-break: keep-all;
+  @media screen and (max-width: 500px) {
+    margin-top: 10vh;
+    width: 320px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -88,6 +93,9 @@ const TextContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const LeftAlignContaienr = styled.div`
@@ -97,6 +105,9 @@ const LeftAlignContaienr = styled.div`
 const RightAlignContainer = styled.div`
   text-align: end;
   margin: 40px;
+  @media screen and (max-width: 500px) {
+    margin: 0;
+  }
 `;
 
 const Title = styled.div`
@@ -104,12 +115,18 @@ const Title = styled.div`
   font-weight: ${({ bold }) => (bold ? 600 : 300)};
   font-size: ${({ theme }) => theme.fontLarge};
   margin-bottom: 10px;
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
+  }
 `;
 
 const ContentText = styled.div`
   line-height: 170%;
   font-size: ${({ theme }) => theme.fontMedium};
   font-weight: ${({ theme }) => theme.weightLight};
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
 `;
 
 const DesignImg = styled.img`
@@ -117,6 +134,9 @@ const DesignImg = styled.img`
   position: absolute;
   right: 0;
   top: 20%;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Bold = styled.span`

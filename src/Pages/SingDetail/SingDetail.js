@@ -19,6 +19,7 @@ export default SingDetail;
 const Container = styled.div`
   width: 100%;
   background-color: black;
+  overflow-x: hidden;
 `;
 
 const Wrapper = styled.div`

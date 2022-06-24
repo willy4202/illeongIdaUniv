@@ -21,18 +21,27 @@ const VideoHeader = styled.div`
   position: fixed;
   top: 0;
   z-index: -1;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Video = styled.video`
   object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const ScrollDiv = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;

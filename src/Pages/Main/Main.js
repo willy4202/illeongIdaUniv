@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import OurProject from "./OurProject/OurProject";
 import MainVideo from "./MainVideo";
-import Nav from "Components/Nav";
 import Support from "./Support";
 
 const Main = () => {
@@ -13,10 +12,17 @@ const Main = () => {
     AOS.init();
   });
 
+  const size = {
+    width: window.innerWidth || document.body.clientWidth,
+    height: window.innerHeight || document.body.clientHeight,
+  };
+
+  let width = size.width;
+
   return (
     <Container>
-      <MainVideo />
-      <Wrapper>
+      {width > 500 ? <MainVideo /> : null}
+      <Wrapper width={width}>
         <MainText />
         <OurProject />
         <Support />
@@ -28,17 +34,19 @@ const Main = () => {
 export default Main;
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   position: relative;
 `;
 
 const Wrapper = styled.div`
-  width: 100vw;
-  padding: 0 20px 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
   color: white;
+  width: 100%;
+  margin-top: ${({ width }) => (width > 500 ? "100vh" : "0")};
+
+  padding: 0 20px 300px;
 `;
