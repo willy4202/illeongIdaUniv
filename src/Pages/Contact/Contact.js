@@ -2,40 +2,52 @@ import React from "react";
 import styled from "styled-components";
 import ilimg from "Images/MainImage/logo.png";
 import singlogo from "Images/MainImage/sing_logo.png";
+import group_img from "Images/MainImage/group.png";
 
 const Contact = () => {
   return (
     <Container>
       <Wrap>
-        <Image src={ilimg} />
-        <Singimg src={singlogo} />
+        <Text>CONTAC US</Text>
+        <Box>
+          <Groupimg src={group_img}></Groupimg>
+          <Ceo>조현찬</Ceo>
+        </Box>
       </Wrap>
-      <Box>
-        <h1>협의문의 조현찬</h1>
-      </Box>
     </Container>
   );
 };
 
 export default Contact;
 
-const Wrap = styled.div`
-  width: 100vw;
-  display: flex;
-  margin-top: 100px;
-  justify-content: center;
-  background-color: #2e2e2e;
-`;
-
-const Image = styled.img`
-  width: 200px;
-`;
-
-const Singimg = styled.img``;
-
-const Box = styled.div``;
-
 const Container = styled.div`
-  width: 100vw;
-  position: relative;
+  background-color: black;
+  height: 100vw;
 `;
+
+const Text = styled.h1`
+  position: absloute;
+  color: white;
+  display: flex;
+  font-weight: ${({ theme }) => theme.weightRegular};
+  font-size: 50px;
+`;
+
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  color: white;
+`;
+
+const Groupimg = styled.img`
+  margin-top: 150px;
+`;
+
+const Box = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const Ceo = styled.div``;
