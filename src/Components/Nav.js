@@ -21,7 +21,7 @@ const Nav = () => {
             <Nava to="/2">SING</Nava>
           </Navli>
           <Navli>
-            <Nava to="/">CONTACT US</Nava>
+            <Nava to="/contact">CONTACT US</Nava>
           </Navli>
         </Navmenu>
       </Navbar>

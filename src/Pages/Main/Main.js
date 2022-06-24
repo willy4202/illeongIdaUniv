@@ -7,7 +7,6 @@ import OurProject from "./OurProject/OurProject";
 import MainVideo from "./MainVideo";
 import Nav from "Components/Nav";
 import Support from "./Support";
-import Contact from "Pages/Contact/Contact";
 
 const Main = () => {
   useEffect(() => {
@@ -21,7 +20,6 @@ const Main = () => {
         <MainText />
         <OurProject />
         <Support />
-        <Contact />
       </Wrapper>
     </Container>
   );
