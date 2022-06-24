@@ -10,6 +10,7 @@ const Header = () => {
         <TitleImg src={singLogo} />
       </TitleWrapper>
       <Img src="https://publy.imgix.net/images/2019/04/23/1555998249_3vqHPbga0Tf5Ezy0MQOy8YWxbQMtAUUtwIeUaReP.jpeg?fm=pjpg" />
+
       <Bold>대학가요,재는 [새롭게 일렁이다]의 두번째 세계관입니다.</Bold>
       <Text>
         과거를 기억하고, 이를 현재에 적용하여 더 나은 미래를 만드는 데
@@ -70,8 +71,9 @@ const TitleImg = styled.img`
 const Img = styled.img`
   width: 100%;
 `;
+
 const Bold = styled.span`
-  font-size: ${({ theme }) => theme.fontMedium};
+  font-size: 20px;
   font-weight: ${({ theme }) => theme.weightSemiBold};
   margin: 60px 0;
   word-break: keep-all;
@@ -85,6 +87,7 @@ const Text = styled.div`
   white-space: pre-wrap;
   word-break: keep-all;
   line-height: 150%;
+  font-size: 15px;
   @media screen and (max-width: 500px) {
     font-size: 15px;
   }
