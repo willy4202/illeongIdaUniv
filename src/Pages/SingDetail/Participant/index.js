@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import lee from "Images/Top10/1.png";
+import lee from "Images/Top10/profile.png";
 
 const MOCKSINGER = [
-  {
-    profileImg: lee,
-    singer: "리무진",
-  },
   {
     profileImg: lee,
     singer: "리무진",
@@ -58,15 +54,14 @@ const Participant = () => {
     <Container>
       <Title>TOP 10</Title>
       <Grid>
-        {data &&
-          data.map((item, i) => {
-            <Wrapper key={i}>
-              <Album>
-                <AlbumImg src={item.profileImg} />
-              </Album>
-              <AlbumTitle>{item.singer}</AlbumTitle>
-            </Wrapper>;
-          })}
+        {data.map((item, i) => {
+          <Wrapper key={i}>
+            <Album>
+              <AlbumImg src={item.profileImg} />
+            </Album>
+            <AlbumTitle>{item.singer}</AlbumTitle>
+          </Wrapper>;
+        })}
       </Grid>
     </Container>
   );

@@ -6,7 +6,7 @@ import singLogo from "Images/MainImage/sing_logo.png";
 
 const MOCK = [
   {
-    id: "1",
+    id: "2",
     logoImg: logo,
     title: "독립 보훈 프로젝트",
     content: `대한을 기억하는 행위의 중심이 되고자합니다.\n \n독립선대의 희생이 더 명예로울 수 있도록\n그들의 명예가 끊이지 않을 수 있도록\n그들을 기억하는 행위의 중심이 되고자. \n \n문을 열고 나아갑니다.`,

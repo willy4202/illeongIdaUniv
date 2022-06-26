@@ -1,75 +1,65 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import logo from "Images/MainImage/logo.png";
+import albumImg from "Images/Top10/Album.png";
 import { Link } from "react-router-dom";
 
 const MOCK_SONG = [
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "임준우",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "제원이는 항상 배고프다",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "한소진",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "이준행",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "전자연",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "석동진",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "권민",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "김민지",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "공대너드",
   },
   {
-    imgCover:
-      "https://cdn.notefolio.net/img/6f/62/6f621257d310f1e1bc9f85f3b9d873a0e645a876002c24d97e018031124940da_v1.jpg",
+    imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
     title: "제목",
     singer: "수평적 관계",
