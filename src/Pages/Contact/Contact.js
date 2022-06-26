@@ -25,7 +25,6 @@ const Container = styled.div`
 `;
 
 const Text = styled.h1`
-  position: absloute;
   color: white;
   display: flex;
   font-weight: ${({ theme }) => theme.weightRegular};
