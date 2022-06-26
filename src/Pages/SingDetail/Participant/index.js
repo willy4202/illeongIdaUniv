@@ -46,22 +46,29 @@ const MOCKSINGER = [
 ];
 
 const Participant = () => {
-  const [data, setData] = useState([]);
+  const [profileData, seProfiletData] = useState([]);
 
-  useEffect(() => setData(MOCKSINGER), []);
+  useEffect(() => seProfiletData(MOCKSINGER), []);
 
   return (
     <Container>
       <Title>TOP 10</Title>
       <Grid>
-        {data.map((item, i) => {
-          <Wrapper key={i}>
-            <Album>
-              <AlbumImg src={item.profileImg} />
-            </Album>
-            <AlbumTitle>{item.singer}</AlbumTitle>
-          </Wrapper>;
-        })}
+        {profileData &&
+          profileData.map(item => {
+            <Wrapper>
+              <Album>
+                <AlbumImg src={item.profileImg} />
+              </Album>
+              <AlbumTitle>{item.singer}</AlbumTitle>
+            </Wrapper>;
+          })}
+        <Wrapper>
+          <Album>
+            <AlbumImg src={lee} />
+          </Album>
+          <AlbumTitle>hi</AlbumTitle>
+        </Wrapper>
       </Grid>
     </Container>
   );
@@ -114,10 +121,8 @@ const Wrapper = styled.div`
 const Album = styled.div`
   width: 200px;
   height: 200px;
-  border-radius: 20px;
-  background-color: gray;
+  border: none;
   overflow: hidden;
-  box-shadow: 3px 3px 10px;
   @media screen and (max-width: 500px) {
     width: 140px;
     height: 140px;
@@ -129,7 +134,6 @@ const AlbumImg = styled.img`
   height: 100%;
   object-fit: contain;
   &:hover {
-    filter: blur(5px);
     transform: scale(1.1, 1.1);
     transition-duration: 500ms;
     transition-timing-function: ease;
