@@ -9,10 +9,34 @@ const Contact = () => {
     <Container>
       <Wrap>
         <Text>CONTACT US</Text>
-        <Box>
+        {/* <Box>
           <Groupimg src={group_img}></Groupimg>
-        </Box>
+        </Box> */}
       </Wrap>
+      <ContactWrap>
+        <Txt_box>
+          <Contact_txt>
+            CEO
+            <hr />
+            광고문의
+            <hr />
+            협업 문의
+            <hr />
+            방송 문의
+            <hr />
+          </Contact_txt>
+        </Txt_box>
+        <Person>
+          조현찬
+          <hr />
+          010.4325.5105
+          <hr />
+          010.3471.1604
+          <hr />
+          010.4736.9139
+          <hr />
+        </Person>
+      </ContactWrap>
     </Container>
   );
 };
@@ -49,3 +73,40 @@ const Box = styled.div`
 `;
 
 const Ceo = styled.div``;
+
+const ContactWrap = styled.div`
+  display: flex;
+  text align: center;
+  position:absolute;
+  left:33%;
+  top:40%;
+`;
+
+const Txt_box = styled.div`
+  background-color: #797979;
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+`;
+
+const Person = styled.div`
+  font-size: ${({ theme }) => theme.fontRegular};
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 130%;
+  position: relative;
+  left: 40px;
+`;
+
+const Contact_txt = styled.div`
+  font-size: ${({ theme }) => theme.fontRegular};
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  line-height: 105%;
+  white-space: pre-line;
+`;
