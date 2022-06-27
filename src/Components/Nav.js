@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ilimage from "Images/MainImage/logo.png";
+import ilimage from "Images/MainImage/il_logo.png";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -52,7 +52,7 @@ const Logo = styled.div`
 `;
 
 const Navimage = styled.img`
-  height: 50px;
+  height: 70px;
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 500px) {
