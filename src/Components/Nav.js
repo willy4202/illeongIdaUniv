@@ -17,7 +17,7 @@ const Nav = () => {
             <Nava to="/">HOME</Nava>
           </Navli>
           <Navli>
-            <Nava to="/2">SING</Nava>
+            <Nava to="/2">대학가요,재</Nava>
           </Navli>
           <Navli>
             <Nava to="/">CONTACT US</Nava>
@@ -55,6 +55,11 @@ const Navimage = styled.img`
   height: 70px;
   justify-content: center;
   align-items: center;
+  &:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+  }
   @media screen and (max-width: 500px) {
     height: 40px;
   }
@@ -80,6 +85,12 @@ const Navli = styled.li`
 
 const Nava = styled(Link)`
   text-decoration: none;
+  &:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    color: #f7f7f7;
+  }
   @media screen and (max-width: 500px) {
     font-size: 12px;
   }
