@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Albums from "./Albums";
 import Header from "./Header";
+import Winner from "Pages/SingDetail/Winner";
 
 const SingDetail = () => {
   return (
@@ -9,6 +10,7 @@ const SingDetail = () => {
       <Wrapper>
         <Header />
         <Albums />
+        <Winner />
       </Wrapper>
     </Container>
   );

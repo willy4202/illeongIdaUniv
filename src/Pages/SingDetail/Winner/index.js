@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import YouTube from "react-youtube";
 import Support from "Pages/Main/Support";
+import sing_logo from "Images/MainImage/winner_img.png";
 
 const Winner = () => {
   return (
     <Container>
+      <Winnerimg src={sing_logo} />
       <Youtube>
         <iframe
           width="1320"
@@ -28,7 +30,9 @@ const Container = styled.div`
   position: relative;
 `;
 
-const Singwinner = styled.div``;
+const Winnerimg = styled.img`
+  padding-bottom: 20%;
+`;
 
 const Youtube = styled.div`
   position: relative;
