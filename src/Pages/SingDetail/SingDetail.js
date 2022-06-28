@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Albums from "Pages/SingDetail/Albums";
 import Header from "Pages/SingDetail/Header";
 import Participant from "Pages/SingDetail/Participant";
+import Winner from "Pages/SingDetail/Winner";
 
 const SingDetail = () => {
   return (
@@ -11,6 +12,7 @@ const SingDetail = () => {
         <Header />
         <Participant />
         <Albums />
+        <Winner />
       </Wrapper>
     </Container>
   );
