@@ -58,11 +58,9 @@ const Wrap = styled.div`
 `;
 
 const ContactWrap = styled.div`
+  width: 500px;
   display: flex;
-  text-align: center;
-  position: absolute;
-  left: 33%;
-  top: 40%;
+  margin: 150px auto;
 `;
 
 const TxtBox = styled.div`
@@ -81,6 +79,8 @@ const Person = styled.div`
   line-height: 130%;
   position: relative;
   left: 40px;
+  width: 200px;
+  paddign-right: 0;
 `;
 
 const ContactTxt = styled.div`
