@@ -1,21 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import ilimg from "Images/MainImage/logo.png";
-import singlogo from "Images/MainImage/sing_logo.png";
-import group_img from "Images/MainImage/contact.png";
 
 const Contact = () => {
   return (
     <Container>
       <Wrap>
         <Text>CONTACT US</Text>
-        {/* <Box>
-          <Groupimg src={group_img}></Groupimg>
-        </Box> */}
       </Wrap>
       <ContactWrap>
-        <Txt_box>
-          <Contact_txt>
+        <TxtBox>
+          <ContactTxt>
             CEO
             <hr />
             광고문의
@@ -24,8 +18,8 @@ const Contact = () => {
             <hr />
             방송 문의
             <hr />
-          </Contact_txt>
-        </Txt_box>
+          </ContactTxt>
+        </TxtBox>
         <Person>
           조현찬
           <hr />
@@ -63,26 +57,15 @@ const Wrap = styled.div`
   color: white;
 `;
 
-const Groupimg = styled.img`
-  margin-top: 150px;
-`;
-
-const Box = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const Ceo = styled.div``;
-
 const ContactWrap = styled.div`
   display: flex;
-  text align: center;
-  position:absolute;
-  left:33%;
-  top:40%;
+  text-align: center;
+  position: absolute;
+  left: 33%;
+  top: 40%;
 `;
 
-const Txt_box = styled.div`
+const TxtBox = styled.div`
   background-color: #797979;
   width: 280px;
   height: 200px;
@@ -100,7 +83,7 @@ const Person = styled.div`
   left: 40px;
 `;
 
-const Contact_txt = styled.div`
+const ContactTxt = styled.div`
   font-size: ${({ theme }) => theme.fontRegular};
   color: black;
   display: flex;

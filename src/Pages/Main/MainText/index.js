@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import testImg from "Images/MainImage/testImg.svg";
+import testImg from "Images/MainImage/logo_water.png";
 
 const MainText = () => {
   useEffect(() => {
@@ -130,10 +130,10 @@ const ContentText = styled.div`
 `;
 
 const DesignImg = styled.img`
-  width: 15%;
+  width: 40%;
   position: absolute;
-  right: 0;
-  top: 20%;
+  right: -25%;
+  top: 10%;
   @media screen and (max-width: 500px) {
     display: none;
   }

@@ -47,6 +47,5 @@ const Wrapper = styled.div`
   color: white;
   width: 100%;
   margin-top: ${({ width }) => (width > 500 ? "100vh" : "0")};
-
   padding: 0 20px 300px;
 `;
