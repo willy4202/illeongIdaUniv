@@ -20,7 +20,7 @@ const Nav = () => {
             <Nava to="/2">대학가요,재</Nava>
           </Navli>
           <Navli>
-            <Nava to="/">CONTACT US</Nava>
+            <Nava to="/contact">CONTACT US</Nava>
           </Navli>
         </Navmenu>
       </Navbar>
