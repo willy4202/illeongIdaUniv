@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import YouTube from "react-youtube";
 import Support from "Pages/Main/Support";
 import sing_logo from "Images/MainImage/winner_img.png";
 
