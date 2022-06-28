@@ -1,5 +1,5 @@
 import React from "react";
-import mainBack from "Images/MainVideo/mainBack.mp4";
+import mainBack from "Images/MainVideo/1.mp4";
 import styled from "styled-components";
 
 const MainVideo = () => {

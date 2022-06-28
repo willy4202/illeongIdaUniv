@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import albumImg from "Images/Top10/Album.png";
-import { Link } from "react-router-dom";
 
 const MOCK_SONG = [
-  {
-    imgCover: albumImg,
-    link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
-    singer: "임준우",
-  },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
@@ -126,7 +119,7 @@ const Title = styled.div`
 const Box = styled.div`
   background-color: #e0e0e0;
   width: 100%;
-  height: 300px;
+  height: 600px;
   position: absolute;
   top: 450px;
   z-index: 0;
@@ -137,7 +130,7 @@ const Box = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   z-index: 2;
   @media screen and (max-width: 500px) {

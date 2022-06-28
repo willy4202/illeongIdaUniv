@@ -39,10 +39,6 @@ const MOCKSINGER = [
     profileImg: lee,
     singer: "리무진",
   },
-  {
-    profileImg: lee,
-    singer: "리무진",
-  },
 ];
 
 const Participant = () => {
@@ -55,20 +51,16 @@ const Participant = () => {
       <Title>TOP 10</Title>
       <Grid>
         {profileData &&
-          profileData.map(item => {
-            <Wrapper>
-              <Album>
-                <AlbumImg src={item.profileImg} />
-              </Album>
-              <AlbumTitle>{item.singer}</AlbumTitle>
-            </Wrapper>;
+          profileData.map((item, i) => {
+            return (
+              <Wrapper key={i}>
+                <Album>
+                  <AlbumImg src={item.profileImg} />
+                </Album>
+                <AlbumTitle>{item.singer}</AlbumTitle>
+              </Wrapper>
+            );
           })}
-        <Wrapper>
-          <Album>
-            <AlbumImg src={lee} />
-          </Album>
-          <AlbumTitle>hi</AlbumTitle>
-        </Wrapper>
       </Grid>
     </Container>
   );
@@ -103,7 +95,7 @@ const Title = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   @media screen and (max-width: 500px) {
     grid-template-columns: 1fr 1fr;
@@ -144,8 +136,4 @@ const AlbumTitle = styled.div`
   font-size: ${({ theme }) => theme.fontSmall};
   font-weight: 500;
   padding: 10px;
-`;
-
-const Singer = styled.div`
-  font-size: ${({ theme }) => theme.fontSmall};
 `;
