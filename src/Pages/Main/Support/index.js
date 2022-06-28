@@ -1,30 +1,55 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import ilimage from "Images/MainImage/il_logo.png";
 
 const MOCK_LOGO = [
   {
-    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
-    name: "Nike",
+    img: ilimage,
+    name: "기업명",
   },
   {
-    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
-    name: "Nike",
+    img: ilimage,
+    name: "기업명",
   },
   {
-    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
-    name: "Nike",
+    img: ilimage,
+    name: "기업명",
   },
   {
-    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
-    name: "Nike",
+    img: ilimage,
+    name: "기업명",
   },
   {
-    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
-    name: "Nike",
+    img: ilimage,
+    name: "기업명",
   },
   {
-    img: "https://images.chosun.com/resizer/k3QsMVrbdLFwub6x_yiwN3i7gJc=/600x394/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Q6P3WWJ3NHDKWMNK7HI6SMUWQE.jpg",
-    name: "Nike",
+    img: ilimage,
+    name: "기업명",
+  },
+  {
+    img: ilimage,
+    name: "기업명",
+  },
+  {
+    img: ilimage,
+    name: "기업명",
+  },
+  {
+    img: ilimage,
+    name: "기업명",
+  },
+  {
+    img: ilimage,
+    name: "기업명",
+  },
+  {
+    img: ilimage,
+    name: "기업명",
+  },
+  {
+    img: ilimage,
+    name: "기업명",
   },
 ];
 

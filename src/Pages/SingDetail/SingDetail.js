@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Albums from "./Albums";
-import Header from "./Header";
+import Albums from "Pages/SingDetail/Albums";
+import Header from "Pages/SingDetail/Header";
+import Participant from "Pages/SingDetail/Participant";
 import Winner from "Pages/SingDetail/Winner";
 
 const SingDetail = () => {
@@ -9,6 +10,7 @@ const SingDetail = () => {
     <Container>
       <Wrapper>
         <Header />
+        <Participant />
         <Albums />
         <Winner />
       </Wrapper>

@@ -1,6 +1,7 @@
 import Nav from "Components/Nav";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollTop from "ScrollTop";
 import Abouts from "./Pages/Abouts/Abouts";
 import ContestDetail from "./Pages/ContestDetail/ContestDetail";
 import Main from "./Pages/Main/Main";
@@ -12,6 +13,7 @@ const Router = () => {
   return (
     <BrowserRouter>
       <GlobalStyles />
+      <ScrollTop />
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
