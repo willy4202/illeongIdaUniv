@@ -80,7 +80,6 @@ const Person = styled.div`
   position: relative;
   left: 40px;
   width: 200px;
-  paddign-right: 0;
 `;
 
 const ContactTxt = styled.div`
