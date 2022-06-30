@@ -39,7 +39,7 @@ export default Contact;
 
 const Container = styled.div`
   background-color: black;
-  height: 80vw;
+  height: 100vh;
 `;
 
 const Text = styled.h1`
