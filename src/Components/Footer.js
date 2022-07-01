@@ -47,7 +47,6 @@ const Container = styled.div`
   padding-bottom: 30px;
 
   @media screen and (max-width: 500px) {
-    width: 400px;
   }
 `;
 
