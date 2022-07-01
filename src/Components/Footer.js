@@ -52,7 +52,7 @@ const Container = styled.div`
 
 const Wrap = styled.div`
   display: flex;
-  width: 60%;
+  width: 1120px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
