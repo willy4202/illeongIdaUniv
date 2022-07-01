@@ -1,43 +1,52 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import lee from "Images/Top10/profile.png";
+import 제원이 from "Images/Top10/제원이.png";
+import 한소진 from "Images/Top10/한소진.png";
+import 이준행 from "Images/Top10/이준행.png";
+// import 전자연 from "Images/Top10/전자연.png";
+import 석동진 from "Images/Top10/석동진.png";
+import 권민 from "Images/Top10/권민.png";
+import 김민지 from "Images/Top10/김민지.png";
+import 공대너드 from "Images/Top10/공대너드.png";
+import top8img from "Images/Top10/본선진출자.jpeg";
 
 const MOCKSINGER = [
   {
-    profileImg: lee,
-    singer: "리무진",
+    profileImg: 제원이,
+    singer: "제원이",
+  },
+  {
+    profileImg: 한소진,
+    singer: "한소진",
+  },
+  {
+    profileImg: 이준행,
+    singer: "이준행",
+  },
+  {
+    profileImg: 이준행,
+    singer: "전자연",
+  },
+  {
+    profileImg: 석동진,
+    singer: "석동진",
+  },
+  {
+    profileImg: 권민,
+    singer: "권민",
+  },
+  {
+    profileImg: 김민지,
+    singer: "김민지",
+  },
+  {
+    profileImg: 공대너드,
+    singer: "공대너드",
   },
   {
     profileImg: lee,
-    singer: "리무진",
-  },
-  {
-    profileImg: lee,
-    singer: "리무진",
-  },
-  {
-    profileImg: lee,
-    singer: "리무진",
-  },
-  {
-    profileImg: lee,
-    singer: "리무진",
-  },
-  {
-    profileImg: lee,
-    singer: "리무진",
-  },
-  {
-    profileImg: lee,
-    singer: "리무진",
-  },
-  {
-    profileImg: lee,
-    singer: "리무진",
-  },
-  {
-    profileImg: lee,
-    singer: "리무진",
+    singer: "수평적 관계",
   },
 ];
 
@@ -62,6 +71,7 @@ const Participant = () => {
             );
           })}
       </Grid>
+      <Top8 src={top8img} />
     </Container>
   );
 };
@@ -136,4 +146,8 @@ const AlbumTitle = styled.div`
   font-size: ${({ theme }) => theme.fontSmall};
   font-weight: 500;
   padding: 10px;
+`;
+
+const Top8 = styled.img`
+  width: 80vw;
 `;
