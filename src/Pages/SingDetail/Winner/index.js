@@ -6,8 +6,8 @@ import sing_logo from "Images/MainImage/winnerimg2.png";
 const Winner = () => {
   return (
     <Container>
-<<<<<<< HEAD
-    <Winnerfirst>
+      {/* <<<<<<< HEAD */}
+      <Winnerfirst>
         <Winnerimg src={sing_logo} />
       </Winnerfirst>
       <Youtube>
@@ -55,7 +55,6 @@ const Winnerimg = styled.img`
 
 `;
 
-
 const Youtube = styled.div`
   position: relative;
   padding-bottom: 10%;
@@ -76,5 +75,4 @@ height:300px;
 
 const Supportwrrap = styled.div`
   margin-bottom: 200px;
-
 `;
