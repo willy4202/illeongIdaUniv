@@ -6,19 +6,19 @@ const MOCK_SONG = [
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
+    title: "Touch [Prod by-조창대]",
     singer: "제원이는 항상 배고프다",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
+    title: "YS",
     singer: "한소진",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
+    title: "bottoms up [Prod by-Jizalo]",
     singer: "이준행",
   },
   {
@@ -30,31 +30,31 @@ const MOCK_SONG = [
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
+    title: "CG [Prod by-Jizalo]",
     singer: "석동진",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
+    title: "Love Story [Prod by-Muxo&황수진]",
     singer: "권민",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
+    title: "Dullco [Prod by-Jizalo]",
     singer: "김민지",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
+    title: "Just want a better day [Prod by-Jizalo]",
     singer: "공대너드",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "제목",
+    title: "HOPE [Prod by-이진한]",
     singer: "수평적 관계",
   },
 ];
@@ -72,7 +72,7 @@ const Albums = () => {
   return (
     <Container>
       <Title>Album</Title>
-      <Box />
+      {/* <Box /> */}
       <Grid>
         {songData &&
           songData.map((item, i) => (
@@ -96,10 +96,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 200px 0;
-  background-color: white;
+  background-color: black;
 
   width: 100%;
-  color: black;
+  color: white;
   position: relative;
   @media screen and (max-width: 500px) {
     padding: 200px 0;
