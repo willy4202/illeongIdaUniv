@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import singLogo from "Images/MainImage/sing_logo.png";
+import alternavtive from "Images/MainImage/alternative.png";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         <Title>ABOUT </Title>
         <TitleImg src={singLogo} />
       </TitleWrapper>
-      <Img src="https://publy.imgix.net/images/2019/04/23/1555998249_3vqHPbga0Tf5Ezy0MQOy8YWxbQMtAUUtwIeUaReP.jpeg?fm=pjpg" />
+      <Img src={alternavtive} />
 
       <Bold>대학가요,재는 [새롭게 일렁이다]의 두번째 세계관입니다.</Bold>
       <Text>
