@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Support from "Pages/Main/Support";
-import sing_logo from "Images/MainImage/winnerimg2.png";
+import winner_img from "Images/MainImage/winnerimg2.png";
 
 const Winner = () => {
   return (
     <Container>
       {/* <<<<<<< HEAD */}
       <Winnerfirst>
-        <Winnerimg src={sing_logo} />
+        <Winnerimg src={winner_img} />
       </Winnerfirst>
       <Youtube>
         <Video
@@ -38,7 +38,7 @@ const Container = styled.div`
 `;
 
 const Winnerfirst = styled.div`
-  width: 70vw;
+  width: 1120px;
   margin:100px auto;
 
   @media screen and (max-width: 500px) {
@@ -48,9 +48,8 @@ const Winnerfirst = styled.div`
 `;
 
 const Winnerimg = styled.img`
-  paddign: 10px;
-  width: 70vw;
-  
+  width: 1120px;
+  marign: 0 auto;
   @media screen and (max-width: 500px) {
 
 `;
