@@ -57,6 +57,8 @@ const Winnerimg = styled.img`
 const Youtube = styled.div`
   position: relative;
   padding-bottom: 10%;
+  padding-top: 300px;
+  width:1120px;
 
   @media screen and (max-width: 500px) {
     width: 320px;
@@ -67,6 +69,7 @@ const Youtube = styled.div`
 `;
 
 const Video = styled.iframe`
+width:1120px;
 @media screen and (max-width: 500px) {
 width: 320px;
 height:300px;
