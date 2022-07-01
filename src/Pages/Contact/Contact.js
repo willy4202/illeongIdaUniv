@@ -39,7 +39,10 @@ export default Contact;
 
 const Container = styled.div`
   background-color: black;
-  height: 80vw;
+  height: 100vh;
+
+  @media screen and (max-width: 500px) {
+    height:100vh; 
 `;
 
 const Text = styled.h1`
@@ -47,6 +50,10 @@ const Text = styled.h1`
   display: flex;
   font-weight: ${({ theme }) => theme.weightRegular};
   font-size: 50px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+  }
 `;
 
 const Wrap = styled.div`
@@ -58,11 +65,14 @@ const Wrap = styled.div`
 `;
 
 const ContactWrap = styled.div`
+  width: 500px;
   display: flex;
-  text-align: center;
-  position: absolute;
-  left: 33%;
-  top: 40%;
+  margin: 150px auto;
+
+  @media screen and (max-width: 500px) {
+    width: 320px;
+    margin: 100px 40px;
+  }
 `;
 
 const TxtBox = styled.div`
@@ -70,6 +80,9 @@ const TxtBox = styled.div`
   width: 280px;
   height: 200px;
   border-radius: 10px;
+
+
+  }
 `;
 
 const Person = styled.div`
@@ -81,6 +94,14 @@ const Person = styled.div`
   line-height: 130%;
   position: relative;
   left: 40px;
+  width: 200px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    color: white;
+    left: 2px;
+    top: 6px;
+  }
 `;
 
 const ContactTxt = styled.div`
@@ -92,4 +113,9 @@ const ContactTxt = styled.div`
   margin-top: 10px;
   line-height: 105%;
   white-space: pre-line;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    color: white;
+  }
 `;
