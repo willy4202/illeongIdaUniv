@@ -5,39 +5,39 @@ import lee from "Images/Top10/profile.png";
 const MOCKSINGER = [
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "제원이는 항상 배고프다",
   },
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "한소진",
   },
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "이준행",
   },
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "전자연",
   },
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "석동진",
   },
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "권민",
   },
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "김민지",
   },
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "공대너드",
   },
   {
     profileImg: lee,
-    singer: "리무진",
+    singer: "수평적 관계",
   },
 ];
 
