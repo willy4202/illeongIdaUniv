@@ -57,8 +57,8 @@ const Participant = () => {
 
   return (
     <Container>
-      <Title>TOP 10</Title>
-      <Grid>
+      {/* <Title>TOP 10</Title> */}
+      {/* <Grid>
         {profileData &&
           profileData.map((item, i) => {
             return (
@@ -70,7 +70,7 @@ const Participant = () => {
               </Wrapper>
             );
           })}
-      </Grid>
+      </Grid> */}
       <Top8 src={top8img} />
     </Container>
   );
@@ -83,7 +83,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 200px 0;
-  background-color: white;
+  // background-color: white;
   margin-top: 200px;
   width: 100%;
   color: black;
