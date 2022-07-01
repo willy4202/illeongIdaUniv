@@ -8,6 +8,7 @@ import Main from "./Pages/Main/Main";
 import SingDetail from "./Pages/SingDetail/SingDetail";
 import Contact from "./Pages/Contact/Contact";
 import GlobalStyles from "./Styles/GlobalStyles";
+import Footer from "Components/Footer";
 
 const Router = () => {
   return (
@@ -22,6 +23,7 @@ const Router = () => {
         <Route path="/abouts" element={<Abouts />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
