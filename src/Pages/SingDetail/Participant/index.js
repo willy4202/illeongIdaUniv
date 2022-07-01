@@ -76,7 +76,7 @@ const Participant = () => {
         <Title2>제 1회</Title2>
         <Titleimg src={title_logo} />
       </TitleWrapper>
-      <Top8 src={top8img} />
+      <Top8img src={top8img} />
     </Container>
   );
 };
@@ -147,6 +147,10 @@ const Titleimg = styled.img`
   @media screen and (max-width: 750px) {
     width: 170px;
   }
+`;
+
+const Top8img = styled.img`
+  width: 1120px;
 `;
 
 const Grid = styled.div`
