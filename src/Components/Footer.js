@@ -18,7 +18,10 @@ const Footer = () => {
           copyright 새롭게 일렁이다 All pictures cannot be copied witout
           permission
           <hr />
-          대표 조현찬 | tel: 010.4915.1437
+          <Copywrap>
+            <Copytext1>대표 조현찬 | tel: 010.4915.1437</Copytext1>
+            <Copytext2>Email illeongida.univ@gmail.com</Copytext2>
+          </Copywrap>
         </Copy>
         <Logowrap>
           <Logo1>
@@ -78,6 +81,19 @@ const Copy = styled.div`
     font-size: 8px;
     padding: 10px;
   }
+`;
+
+const Copywrap = styled.div`
+  display: flex;
+`;
+
+const Copytext1 = styled.div`
+  color: white;
+  padding-right: 20px;
+`;
+
+const Copytext2 = styled.div`
+  color: white;
 `;
 
 const Logowrap = styled.div`
