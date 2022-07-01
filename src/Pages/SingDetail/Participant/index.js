@@ -10,6 +10,7 @@ import 권민 from "Images/Top10/권민.png";
 import 김민지 from "Images/Top10/김민지.png";
 import 공대너드 from "Images/Top10/공대너드.png";
 import top8img from "Images/Top10/본선진출자.jpeg";
+import title_logo from "Images/MainImage/sing_logo.png";
 
 const MOCKSINGER = [
   {
@@ -71,6 +72,10 @@ const Participant = () => {
             );
           })}
       </Grid> */}
+      <TitleWrapper>
+        <Title2>제 1회</Title2>
+        <Titleimg src={title_logo} />
+      </TitleWrapper>
       <Top8 src={top8img} />
     </Container>
   );
@@ -100,6 +105,47 @@ const Title = styled.div`
 
   @media screen and (max-width: 500px) {
     font-size: 40px;
+  }
+`;
+
+const TitleWrapper = styled.div`
+  align-self: center;
+  // position: relative;
+  margin-bottom: 70px;
+`;
+
+const Title2 = styled.div`
+  font-size: 80px;
+  font-weight: 600;
+  float: left;
+  color: white;
+  position: relative;
+  top: 18px;
+  padding-right: 10px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+    position: relative;
+    top: 7px;
+    padding-right: 10px;
+  }
+
+  @media screen and (max-width: 750px) {
+    font-size: 24px;
+    position: relative;
+    top: 7px;
+    padding-right: 10px;
+  }
+`;
+
+const Titleimg = styled.img`
+  width: 500px;
+  @media screen and (max-width: 500px) {
+    width: 170px;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 170px;
   }
 `;
 
