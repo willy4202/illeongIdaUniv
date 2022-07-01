@@ -6,14 +6,14 @@ const MOCK_SONG = [
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "Touch [Prod by-조창대]",
-    singer: "제원이는 항상 배고프다",
+    title: "YS",
+    singer: "한소진",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "YS",
-    singer: "한소진",
+    title: "Dullco [Prod by-Jizalo]",
+    singer: "김민지",
   },
   {
     imgCover: albumImg,
@@ -30,26 +30,26 @@ const MOCK_SONG = [
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "CG [Prod by-Jizalo]",
-    singer: "석동진",
-  },
-  {
-    imgCover: albumImg,
-    link: "https://youtu.be/ngr9kV1ReO8",
     title: "Love Story [Prod by-Muxo&황수진]",
     singer: "권민",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "Dullco [Prod by-Jizalo]",
-    singer: "김민지",
+    title: "Just want a better day [Prod by-Jizalo]",
+    singer: "공대너드",
   },
   {
     imgCover: albumImg,
     link: "https://youtu.be/ngr9kV1ReO8",
-    title: "Just want a better day [Prod by-Jizalo]",
-    singer: "공대너드",
+    title: "CG [Prod by-Jizalo]",
+    singer: "석동진",
+  },
+  {
+    imgCover: albumImg,
+    link: "https://youtu.be/ngr9kV1ReO8",
+    title: "Touch [Prod by-조창대]",
+    singer: "어카프리치오",
   },
   {
     imgCover: albumImg,
