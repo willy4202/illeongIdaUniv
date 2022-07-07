@@ -141,7 +141,7 @@ const Title2 = styled.div`
 const Titleimg = styled.img`
   width: 500px;
   @media screen and (max-width: 500px) {
-    width: 170px;
+    width: 300px;
   }
 
   @media screen and (max-width: 750px) {
@@ -151,6 +151,10 @@ const Titleimg = styled.img`
 
 const Top8img = styled.img`
   width: 1120px;
+
+  @media screen and (max-width: 500px) {
+    width: 450px;
+  }
 `;
 
 const Grid = styled.div`

@@ -21,9 +21,9 @@ const VideoHeader = styled.div`
   position: fixed;
   top: 0;
   z-index: -1;
-  @media screen and (max-width: 500px) {
-    display: none;
-  }
+  // @media screen and (max-width: 500px) {
+  //   display: none;
+  // }
 `;
 
 const Video = styled.video`
@@ -33,15 +33,15 @@ const Video = styled.video`
   position: fixed;
   top: 0;
   left: 0;
-  @media screen and (max-width: 500px) {
-    display: none;
-  }
+  // @media screen and (max-width: 500px) {
+  //   display: none;
+  // }
 `;
 
 const ScrollDiv = styled.div`
   width: 100%;
   height: 100%;
-  @media screen and (max-width: 500px) {
-    display: none;
-  }
+  // @media screen and (max-width: 500px) {
+  //   display: none;
+  // }
 `;
